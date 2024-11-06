@@ -1,7 +1,7 @@
 // src/components/PostForm.js
 import React from 'react';
 
-const PostForm = ({ newPost, setNewPost, handleAddPost }) => {
+export default function PostForm ({ newPost, setNewPost, handleAddPost }){
   const handleChange = (e) => {
     const { name, value } = e.target;
     setNewPost(prevPost => ({ ...prevPost, [name]: value }));
@@ -34,4 +34,4 @@ const PostForm = ({ newPost, setNewPost, handleAddPost }) => {
   );
 };
 
-export default PostForm;
+

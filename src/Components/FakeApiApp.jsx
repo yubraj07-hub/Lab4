@@ -1,9 +1,8 @@
-// src/components/FakeApiApp.js
 import React, { useState, useEffect } from 'react';
 import PostContainer from './PostContainer';
 import PostForm from './PostForm';
 
-const FakeApiApp = () => {
+export default function FakeApiApp  () {
   const [data, setData] = useState([]);       // Holds the list of posts
   const [loading, setLoading] = useState(true); // Controls the loading indicator
   const [newPost, setNewPost] = useState({ title: '', body: '' }); // Holds new post data
@@ -46,4 +45,3 @@ const FakeApiApp = () => {
   );
 };
 
-export default FakeApiApp;

@@ -2,7 +2,7 @@
 import React from 'react';
 import PostCard from './PostCard';
 
-const PostContainer = ({ posts }) => {
+export default function PostContainer ({ posts }){
   return (
     <div>
       {posts.map(post => (
@@ -12,4 +12,3 @@ const PostContainer = ({ posts }) => {
   );
 };
 
-export default PostContainer;

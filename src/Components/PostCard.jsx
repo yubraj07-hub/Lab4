@@ -1,7 +1,6 @@
-// src/components/PostCard.js
 import React from 'react';
 
-const PostCard = ({ title, body }) => {
+export default function PostCard  ({ title, body }){
   return (
     <div className="post-card">
       <h2>{title}</h2>
@@ -10,4 +9,3 @@ const PostCard = ({ title, body }) => {
   );
 };
 
-export default PostCard;
